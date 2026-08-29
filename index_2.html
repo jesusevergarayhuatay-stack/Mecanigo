@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MecaniGo - Prototipo navegable de la plataforma integral de asistencia y mantenimiento vehicular. Proyecto del curso Gestion de la Innovacion.">
+<meta name="theme-color" content="#1B3A6B">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>*{-webkit-tap-highlight-color:transparent}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>MecaniGo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#E9ECEF; --bg-grid:#DDE2E6;
+  --surface:#FFFFFF; --surface-2:#F3F5F7; --surface-3:#E8ECEF;
+  --ink:#14181D; --ink-2:#4A555F; --ink-3:#7E8992;
+  --line:#D7DCE1; --line-2:#C4CBD1;
+  --accent:#CD6D07; --accent-2:#AC5A04; --accent-soft:#FCEEDF; --on-accent:#FFFFFF;
+  --navy:#1B3A6B; --brand-orange:#FE9637;
+  --steel:#1B3A6B; --steel-soft:#E4EBF6;
+  --ok:#15764F; --ok-soft:#E0F0E9;
+  --warn:#9C6A05; --warn-soft:#F7EDD8;
+  --crit:#B33227; --crit-soft:#F8E4E1;
+  --inkblock:#1B3A6B; --inkblock-fg:#F1F5FA; --bezel:#152E58;
+  --shadow:0 1px 2px rgba(20,24,29,.06), 0 8px 24px -12px rgba(20,24,29,.22);
+  --shadow-lg:0 2px 6px rgba(20,24,29,.08), 0 32px 64px -28px rgba(20,24,29,.45);
+  --r:12px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1216; --bg-grid:#171C21;
+    --surface:#171C22; --surface-2:#1F252C; --surface-3:#272E36;
+    --ink:#ECF0F3; --ink-2:#A2ADB7; --ink-3:#6E7A85;
+    --line:#29313A; --line-2:#39434D;
+    --accent:#FE9637; --accent-2:#FFAB5C; --accent-soft:#3A2513; --on-accent:#1A0E04;
+    --navy:#1B3A6B; --brand-orange:#FE9637;
+    --steel:#8AB2E4; --steel-soft:#16263D;
+    --ok:#41BC8E; --ok-soft:#12301F;
+    --warn:#D8A43C; --warn-soft:#332711;
+    --crit:#E56E60; --crit-soft:#37191A;
+    --inkblock:#1E3E71; --inkblock-fg:#EDF2F8; --bezel:#25406B;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.5), 0 32px 64px -28px rgba(0,0,0,.9);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1216; --bg-grid:#171C21;
+  --surface:#171C22; --surface-2:#1F252C; --surface-3:#272E36;
+  --ink:#ECF0F3; --ink-2:#A2ADB7; --ink-3:#6E7A85;
+  --line:#29313A; --line-2:#39434D;
+  --accent:#FE9637; --accent-2:#FFAB5C; --accent-soft:#3A2513; --on-accent:#1A0E04;
+  --navy:#1B3A6B; --brand-orange:#FE9637;
+  --steel:#8AB2E4; --steel-soft:#16263D;
+  --ok:#41BC8E; --ok-soft:#12301F;
+  --warn:#D8A43C; --warn-soft:#332711;
+  --crit:#E56E60; --crit-soft:#37191A;
+  --inkblock:#1E3E71; --inkblock-fg:#EDF2F8; --bezel:#25406B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.5), 0 32px 64px -28px rgba(0,0,0,.9);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+  font-size:15px; line-height:1.55;
+  background-image:linear-gradient(var(--bg-grid) 1px,transparent 1px),linear-gradient(90deg,var(--bg-grid) 1px,transparent 1px);
+  background-size:28px 28px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:Archivo,system-ui,sans-serif;font-weight:700;letter-spacing:-.018em;margin:0;text-wrap:balance;line-height:1.15}
+button{font:inherit;color:inherit;cursor:pointer;border:none;background:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{font-family:Archivo,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.loc svg{width:13px;height:13px;flex:none}
+.back svg{width:16px;height:16px}
+.note svg{width:13px;height:13px;vertical-align:-2px;color:var(--steel);flex:none}
+.tlogo svg{width:19px;height:19px}
+
+/* ---------- shell ---------- */
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:blur(10px);position:sticky;top:0;z-index:40}
+.topbar{display:flex;align-items:center;gap:20px;padding:14px 0;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.logomark{height:38px;width:auto;display:block;border-radius:8px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.brand .tagline{font-size:11px;color:var(--ink-3);letter-spacing:.04em;font-weight:500;padding-left:2px}
+.personas{display:flex;gap:2px;background:var(--surface-2);padding:3px;border-radius:10px;border:1px solid var(--line);margin-left:auto}
+.personas button{padding:7px 14px;border-radius:7px;font-size:13px;font-weight:600;color:var(--ink-2);white-space:nowrap;transition:.15s}
+.personas button:hover{color:var(--ink)}
+.personas button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.themetog{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);display:grid;place-items:center;color:var(--ink-2)}
+.themetog:hover{color:var(--ink)}
+
+main{padding:28px 0 60px}
+.view{display:none}
+.view.on{display:block}
+
+/* ---------- phone ---------- */
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:start}
+@media(max-width:900px){.stage{grid-template-columns:1fr;gap:26px}}
+.phonewrap{display:flex;justify-content:center}
+.phone{
+  width:392px;height:812px;flex:none;border-radius:44px;background:var(--bezel);
+  padding:11px;box-shadow:var(--shadow-lg);position:relative;
+}
+.phone::after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:6px;width:110px;height:4px;border-radius:3px;background:rgba(255,255,255,.28)}
+.viewport{width:100%;height:100%;border-radius:34px;overflow:hidden;background:var(--surface-2);display:flex;flex-direction:column;position:relative}
+.statusbar{display:flex;justify-content:space-between;align-items:center;padding:11px 22px 5px;font-size:12px;font-weight:600;background:var(--surface);color:var(--ink)}
+.statusbar .icons{display:flex;gap:5px;align-items:center;opacity:.75}
+.screen{flex:1;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.screen::-webkit-scrollbar{width:5px}
+.screen::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:3px}
+.pad{padding:16px}
+
+.navbar{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.navbar h2{font-size:16px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.back{width:30px;height:30px;border-radius:8px;background:var(--surface-2);display:grid;place-items:center;flex:none;color:var(--ink-2)}
+.back:hover{color:var(--ink);background:var(--surface-3)}
+
+.tabbar{display:flex;background:var(--surface);border-top:1px solid var(--line);padding:7px 4px 9px}
+.tabbar button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:9.5px;font-weight:600;color:var(--ink-3);padding:3px 0;letter-spacing:.01em}
+.tabbar button svg{width:20px;height:20px}
+.tabbar button[aria-current="true"]{color:var(--accent)}
+
+/* ---------- app pieces ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.hello{padding:16px 16px 14px;background:var(--surface);border-bottom:1px solid var(--line)}
+.hello .row{display:flex;align-items:center;gap:10px}
+.avatar{width:36px;height:36px;border-radius:50%;background:var(--steel-soft);color:var(--steel);display:grid;place-items:center;font-weight:700;font-size:13px;font-family:Archivo,sans-serif;flex:none}
+.loc{font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:4px}
+
+.vcard{margin:14px 16px 0;border-radius:var(--r);background:var(--inkblock);color:var(--inkblock-fg);padding:14px 15px;position:relative;overflow:hidden}
+.vcard::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 12px,rgba(255,255,255,.028) 12px 24px)}
+.vcard>*{position:relative}
+.vcard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.vcard .name{font-family:Archivo,sans-serif;font-weight:600;font-size:15px}
+.vcard .plate{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.09em;background:rgba(255,255,255,.13);padding:3px 7px;border-radius:5px;border:1px solid rgba(255,255,255,.15)}
+.vcard .meta{display:flex;justify-content:space-between;gap:14px;margin-top:13px}
+.vcard .meta div{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(243,245,247,.55);font-weight:600;white-space:nowrap}
+.vcard .meta strong{display:block;font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0;text-transform:none;color:#fff;font-weight:500;margin-top:3px;white-space:nowrap}
+
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:14px 16px 4px}
+.quick button{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:11px 4px 9px;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:10.5px;font-weight:600;color:var(--ink-2);line-height:1.2;transition:.14s}
+.quick button:hover{border-color:var(--accent);color:var(--ink);transform:translateY(-1px)}
+.quick button svg{width:19px;height:19px;color:var(--accent)}
+.quick button.sos svg{color:var(--crit)}
+
+.sectitle{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:18px 16px 8px}
+.sectitle h3{font-size:14px}
+.sectitle button{font-size:11.5px;font-weight:600;color:var(--accent)}
+
+/* map */
+.mapbox{margin:0 16px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--surface-2);position:relative}
+.mapbox svg{display:block;width:100%;height:auto}
+.maplegend{position:absolute;left:9px;bottom:9px;background:color-mix(in srgb,var(--surface) 90%,transparent);border:1px solid var(--line);border-radius:7px;padding:5px 8px;font-size:9.5px;font-weight:600;color:var(--ink-2);display:flex;gap:10px;backdrop-filter:blur(4px)}
+.maplegend i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.pin{cursor:pointer}
+.pin circle.hit{fill:transparent}
+.pin:hover .head{r:9}
+.pin .head{transition:r .15s}
+
+/* taller list item */
+.tlist{display:flex;flex-direction:column;gap:9px;padding:0 16px 16px}
+.titem{display:flex;gap:11px;padding:12px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);text-align:left;width:100%;transition:.14s}
+.titem:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.tlogo{width:42px;height:42px;border-radius:10px;flex:none;display:grid;place-items:center;font-family:Archivo,sans-serif;font-weight:700;font-size:14px;background:var(--accent-soft);color:var(--accent-2)}
+.tbody{flex:1;min-width:0;padding-right:2px}
+.tname{font-family:Archivo,sans-serif;font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:6px;min-width:0}
+.tname .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.tname .chip{flex:none}
+.tsub{font-size:11.5px;color:var(--ink-3);margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.trow{display:flex;align-items:center;gap:8px;margin-top:6px;font-size:11px;color:var(--ink-2);font-weight:500;white-space:nowrap;overflow:hidden}
+.star{color:var(--warn);font-weight:600}
+.dist{font-family:"IBM Plex Mono",monospace}
+.chip{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2.5px 6px;border-radius:5px}
+.chip.open{background:var(--ok-soft);color:var(--ok)}
+.chip.closed{background:var(--surface-3);color:var(--ink-3)}
+.chip.busy{background:var(--warn-soft);color:var(--warn)}
+
+/* search */
+.searchbar{padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.sfield{display:flex;align-items:center;gap:8px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:8px 11px}
+.sfield input{flex:1;background:none;border:none;outline:none;font:inherit;font-size:13px;color:var(--ink);min-width:0}
+.sfield input::placeholder{color:var(--ink-3)}
+.sfield svg{width:16px;height:16px;color:var(--ink-3);flex:none}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 16px 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;padding:6px 11px;border-radius:20px;border:1px solid var(--line);background:var(--surface);font-size:11.5px;font-weight:600;color:var(--ink-2);white-space:nowrap}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.cmpbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 16px 0;padding:9px 11px;border-radius:10px;background:var(--steel-soft);border:1px solid color-mix(in srgb,var(--steel) 25%,transparent);font-size:11.5px;font-weight:600;color:var(--steel)}
+.cmpbar button{font-size:11.5px;font-weight:700;color:var(--steel);text-decoration:underline;text-underline-offset:2px}
+.cmpcheck{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--line-2);flex:none;display:grid;place-items:center;align-self:center;color:transparent;font-size:11px}
+.cmpcheck[data-on="1"]{background:var(--steel);border-color:var(--steel);color:#fff}
+
+/* compare table */
+.cmptable{width:100%;border-collapse:collapse;font-size:11px;table-layout:fixed}
+.cmptable th,.cmptable td{border-bottom:1px solid var(--line);padding:9px 6px;text-align:left;vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+.cmptable thead th{font-family:Archivo,sans-serif;font-size:10.5px;font-weight:600;background:var(--surface-2)}
+.cmptable tbody th{font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);font-weight:700;width:64px;word-break:normal;overflow-wrap:normal}
+.cmptable .chip{font-size:8.5px;padding:2px 4px}
+.best{color:var(--ok);font-weight:700}
+
+/* detail */
+.dhead{padding:16px;background:var(--surface);border-bottom:1px solid var(--line)}
+.dhead .r1{display:flex;gap:12px}
+.dhead .tlogo{width:52px;height:52px;font-size:17px;border-radius:12px}
+.rating{display:flex;align-items:center;gap:7px;margin-top:9px;font-size:12px}
+.rating .big{font-family:Archivo,sans-serif;font-weight:700;font-size:17px}
+.tagrow{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.tag{font-size:10.5px;font-weight:600;padding:3.5px 8px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2)}
+.svcrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.svcrow:last-child{border-bottom:none}
+.svcrow .n{font-size:12.5px;font-weight:500}
+.svcrow .d{font-size:10.5px;color:var(--ink-3)}
+.svcrow .p{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:500;white-space:nowrap}
+.review{padding:11px 0;border-bottom:1px solid var(--line);font-size:12px}
+.review:last-child{border-bottom:none}
+.review .who{display:flex;justify-content:space-between;font-weight:600;font-size:11.5px;margin-bottom:3px}
+.review .who span{color:var(--warn);font-weight:600}
+.review p{margin:0;color:var(--ink-2);font-size:11.5px;line-height:1.5}
+
+.actionbar{position:sticky;bottom:0;display:flex;gap:8px;padding:11px 14px;background:color-mix(in srgb,var(--surface) 94%,transparent);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+.btn{flex:1;padding:12px;border-radius:10px;font-family:Archivo,sans-serif;font-weight:600;font-size:13.5px;text-align:center;transition:.14s}
+.btn-primary{background:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-ghost{background:var(--surface-2);border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--line-2)}
+.btn-crit{background:var(--crit);color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* booking */
+.fieldlabel{font-family:Archivo,sans-serif;font-size:12px;font-weight:600;margin:16px 0 8px}
+.optlist{display:flex;flex-direction:column;gap:7px}
+.opt{display:flex;align-items:center;gap:10px;padding:11px;border-radius:10px;border:1px solid var(--line);background:var(--surface);text-align:left;width:100%;font-size:12.5px}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt .radio{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--line-2);flex:none}
+.opt[aria-pressed="true"] .radio{border:5px solid var(--accent)}
+.opt .p{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-2)}
+.slots{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.slot{padding:9px 2px;border-radius:9px;border:1px solid var(--line);background:var(--surface);font-family:"IBM Plex Mono",monospace;font-size:12px;text-align:center}
+.slot[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.slot:disabled{opacity:.35;text-decoration:line-through}
+.dates{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none}
+.dates::-webkit-scrollbar{display:none}
+.dchip{flex:none;width:56px;padding:8px 0;border-radius:10px;border:1px solid var(--line);background:var(--surface);text-align:center}
+.dchip .dw{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.dchip .dd{font-family:Archivo,sans-serif;font-weight:700;font-size:17px;margin-top:1px}
+.dchip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.dchip[aria-pressed="true"] .dw{color:color-mix(in srgb,var(--on-accent) 75%,transparent)}
+
+.success{text-align:center;padding:34px 22px}
+.tick{width:64px;height:64px;border-radius:50%;background:var(--ok-soft);color:var(--ok);display:grid;place-items:center;margin:0 auto 16px}
+.tick svg{width:30px;height:30px}
+.code{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:19px;letter-spacing:.11em;font-weight:500;padding:9px 16px;border-radius:9px;background:var(--surface-2);border:1px dashed var(--line-2);margin:12px 0 4px}
+.summary{text-align:left;margin-top:20px;border-top:1px solid var(--line)}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.srow span:first-child{color:var(--ink-3)}
+.srow span:last-child{font-weight:600;text-align:right}
+
+/* SOS */
+.sosscreen{padding:22px 16px;text-align:center}
+.sosbtn{width:172px;height:172px;border-radius:50%;background:var(--crit);color:#fff;font-family:Archivo,sans-serif;font-weight:700;font-size:25px;letter-spacing:.05em;margin:14px auto;display:grid;place-items:center;box-shadow:0 0 0 0 color-mix(in srgb,var(--crit) 45%,transparent);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--crit) 42%,transparent)}70%{box-shadow:0 0 0 26px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media(prefers-reduced-motion:reduce){.sosbtn{animation:none}.spin{animation:none!important}}
+.sosbtn small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.11em;opacity:.85;margin-top:2px}
+.spin{width:40px;height:40px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;margin:0 auto 14px;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.eta{font-family:Archivo,sans-serif;font-weight:700;font-size:34px;color:var(--accent)}
+.track{display:flex;flex-direction:column;gap:0;text-align:left;margin-top:18px}
+.tstep{display:flex;gap:11px;font-size:12px}
+.tstep .dot{width:11px;height:11px;border-radius:50%;background:var(--line-2);flex:none;margin-top:4px;position:relative}
+.tstep .dot::after{content:"";position:absolute;left:50%;top:11px;width:1.5px;height:26px;background:var(--line);transform:translateX(-50%)}
+.tstep:last-child .dot::after{display:none}
+.tstep.done .dot{background:var(--ok)}
+.tstep.now .dot{background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.tstep .lbl{padding-bottom:22px}
+.tstep .lbl strong{display:block;font-size:12.5px}
+.tstep .lbl em{font-style:normal;color:var(--ink-3);font-size:11px}
+
+/* history */
+.alert{margin:14px 16px 0;padding:12px;border-radius:var(--r);background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--warn) 32%,transparent);display:flex;gap:10px;font-size:12px;color:var(--ink)}
+.alert svg{width:17px;height:17px;color:var(--warn);flex:none;margin-top:1px}
+.alert strong{font-family:Archivo,sans-serif;display:block;font-size:12.5px}
+.hitem{display:flex;gap:11px;padding:12px 0;border-bottom:1px solid var(--line)}
+.hitem:last-child{border-bottom:none}
+.hdate{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);width:56px;flex:none;line-height:1.35}
+.hitem .n{font-size:12.5px;font-weight:600}
+.hitem .s{font-size:11px;color:var(--ink-3)}
+.hitem .c{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:12px;white-space:nowrap}
+
+.listrow{display:flex;align-items:center;gap:11px;padding:13px 0;border-bottom:1px solid var(--line);font-size:12.5px;width:100%;text-align:left}
+.listrow:last-child{border-bottom:none}
+.listrow svg{width:17px;height:17px;color:var(--ink-3);flex:none}
+.listrow .arw{margin-left:auto;color:var(--ink-3)}
+.note{font-size:11px;color:var(--ink-3);line-height:1.5;padding:12px;background:var(--surface-2);border-radius:10px;border:1px solid var(--line);margin-top:14px}
+
+/* ---------- aside ---------- */
+aside.notes{position:sticky;top:96px}
+.noteblock{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.noteblock h3{font-size:15px;margin-bottom:4px}
+.noteblock .lead{font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.noteblock hr{border:none;border-top:1px solid var(--line);margin:15px 0}
+.linkrow{display:flex;gap:9px;font-size:12px;color:var(--ink-2);padding:7px 0;line-height:1.45}
+.linkrow b{color:var(--ink);font-weight:600}
+.bullet{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none;margin-top:6px}
+.tip{margin-top:14px;font-size:11.5px;color:var(--ink-3);display:flex;gap:8px;line-height:1.5}
+.tip svg{width:15px;height:15px;flex:none;margin-top:1px;color:var(--steel)}
+
+/* ---------- taller dashboard ---------- */
+.dash{display:flex;flex-direction:column;gap:18px}
+.dashhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.dashhead .tlogo{width:48px;height:48px;font-size:16px}
+.pro{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:var(--ink);color:var(--surface)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:760px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow)}
+.kpi .k{font-family:Archivo,sans-serif;font-weight:700;font-size:29px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.kpi .lb{font-size:11px;color:var(--ink-3);font-weight:600;letter-spacing:.03em}
+.kpi .dt{font-size:11px;font-weight:700;margin-top:5px}
+.kpi .dt.up{color:var(--ok)}
+.kpi .dt.flat{color:var(--ink-3)}
+.spark{margin-top:9px}
+.dashgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px;align-items:start}
+@media(max-width:900px){.dashgrid{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.panel>header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.panel>header h3{font-size:14.5px}
+.panel .body{padding:6px 18px 16px}
+.badge{font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:20px;background:var(--accent-soft);color:var(--accent-2)}
+.req{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.req:last-child{border-bottom:none}
+.req .when{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);width:52px;flex:none;padding-top:2px}
+.req .info{flex:1;min-width:0}
+.req .info b{font-family:Archivo,sans-serif;font-size:13.5px;font-weight:600}
+.req .info p{margin:3px 0 0;font-size:12px;color:var(--ink-2)}
+.req .acts{display:flex;gap:7px;flex:none;align-self:center}
+.mini{padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;border:1px solid var(--line)}
+.mini.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.mini.no{background:var(--surface-2);color:var(--ink-2)}
+.mini.no:hover{color:var(--crit);border-color:var(--crit)}
+.state{font-size:11.5px;font-weight:700}
+.state.acc{color:var(--ok)}
+.state.rej{color:var(--ink-3)}
+.agenda{display:flex;flex-direction:column}
+.aslot{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid var(--line);align-items:center;font-size:12.5px}
+.aslot:last-child{border-bottom:none}
+.aslot .h{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-2);width:48px;flex:none}
+.aslot .bar{width:3px;align-self:stretch;border-radius:2px;background:var(--accent);flex:none}
+.aslot.free{color:var(--ink-3)}
+.aslot.free .bar{background:var(--line)}
+.aslot .veh{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+.rbar{display:flex;align-items:center;gap:9px;font-size:11.5px;padding:3px 0}
+.rbar .t{width:12px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+.rbar .track2{flex:1;height:6px;border-radius:3px;background:var(--surface-3);overflow:hidden}
+.rbar .fill{display:block;height:100%;background:var(--warn);border-radius:3px}
+.rbar .n{width:26px;text-align:right;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+
+/* ---------- canvas / modelo ---------- */
+.mhead{max-width:720px;margin-bottom:24px}
+.mhead h2{font-size:27px;margin-bottom:8px}
+.mhead p{color:var(--ink-2);font-size:14px;margin:0}
+.canvas{display:grid;gap:12px;grid-template-columns:repeat(5,1fr);grid-template-areas:
+ "sc ac pv rc cs"
+ "sc rk pv cn cs"
+ "co co co in in";}
+@media(max-width:1000px){.canvas{grid-template-columns:repeat(2,1fr);grid-template-areas:"sc ac" "rk pv" "rc cn" "cs cs" "co co" "in in"}}
+@media(max-width:620px){.canvas{grid-template-columns:1fr;grid-template-areas:"pv" "sc" "cs" "ac" "rk" "rc" "cn" "co" "in"}}
+.blk{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px}
+.blk h4{font-size:12.5px;display:flex;align-items:center;gap:7px}
+.blk h4 svg{width:15px;height:15px;color:var(--accent);flex:none}
+.blk ul{margin:0;padding-left:16px;font-size:12px;color:var(--ink-2);line-height:1.6}
+.blk ul li{margin-bottom:2px}
+.blk .n{position:absolute}
+.blk.hero{background:var(--inkblock);color:var(--inkblock-fg);border-color:var(--inkblock)}
+.blk.hero h4{color:var(--inkblock-fg)}
+.blk.hero h4 svg{color:var(--accent)}
+.blk.hero ul{color:var(--inkblock-fg);opacity:.82}
+.blk.hero .q{font-family:Archivo,sans-serif;font-size:14.5px;font-weight:600;line-height:1.4;letter-spacing:-.01em}
+.a-sc{grid-area:sc}.a-ac{grid-area:ac}.a-rk{grid-area:rk}.a-pv{grid-area:pv}
+.a-rc{grid-area:rc}.a-cn{grid-area:cn}.a-cs{grid-area:cs}.a-co{grid-area:co}.a-in{grid-area:in}
+.blk.cost{border-top:3px solid var(--crit)}
+.blk.rev{border-top:3px solid var(--ok)}
+
+.revgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+@media(max-width:820px){.revgrid{grid-template-columns:repeat(2,1fr)}}
+.rev4{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:var(--shadow)}
+.rev4 .pct{font-family:Archivo,sans-serif;font-weight:700;font-size:26px;color:var(--ok);letter-spacing:-.03em}
+.rev4 b{display:block;font-family:Archivo,sans-serif;font-size:13px;margin:2px 0 5px}
+.rev4 p{margin:0;font-size:11.5px;color:var(--ink-2);line-height:1.5}
+.foda{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+@media(max-width:820px){.foda{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- móvil ---------- */
+@media(max-width:560px){
+  .topbar{gap:10px}
+  .brand h1{font-size:17px}
+  .themetog{order:2;margin-left:auto}
+  .personas{order:3;width:100%;margin-left:0;overflow-x:auto;scrollbar-width:none}
+  .personas::-webkit-scrollbar{display:none}
+  .personas button{padding:7px 12px;font-size:12.5px}
+}
+@media(max-width:470px){
+  .wrap{padding:0 12px}
+  main{padding:18px 0 40px}
+  .phone{width:100%;height:min(80vh,760px);min-height:540px;border-radius:26px;padding:7px}
+  .viewport{border-radius:20px}
+  .phone::after{display:none}
+  aside.notes{position:static}
+  .mhead h2{font-size:22px}
+  .fgrid{gap:22px}
+  .panel>header,.panel .body{padding-left:14px;padding-right:14px}
+  .req{flex-wrap:wrap;gap:9px}
+  .req .info{flex:1 1 180px}
+  .req .acts{width:100%;padding-left:61px;justify-content:flex-start}
+  .kpi .k{font-size:25px}
+  .dashhead{padding:14px}
+}
+
+footer.site{border-top:1px solid var(--line);margin-top:46px;padding:26px 0 40px;font-size:12px;color:var(--ink-3)}
+.fgrid{display:flex;gap:34px;flex-wrap:wrap;justify-content:space-between}
+footer.site b{color:var(--ink-2);font-weight:600}
+footer.site ul{margin:6px 0 0;padding:0;list-style:none;line-height:1.7}
+.disclaimer{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;line-height:1.6;max-width:760px}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap topbar">
+    <div class="brand">
+      <img class="logomark" src="data:image/png;base64,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" alt="MecaniGo" width="372" height="88">
+      <h1 class="sr-only">MecaniGo — Encuentra. Solicita. Repara.</h1>
+      <div class="tagline">Encuentra. Solicita. Repara.</div>
+    </div>
+    <div class="personas" role="tablist">
+      <button role="tab" data-view="conductor" aria-selected="true">Conductor</button>
+      <button role="tab" data-view="taller" aria-selected="false">Taller afiliado</button>
+      <button role="tab" data-view="modelo" aria-selected="false">Modelo de negocio</button>
+    </div>
+    <button class="themetog" id="themetog" aria-label="Cambiar tema">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="view on" id="view-conductor">
+    <div class="stage">
+      <div class="phonewrap">
+        <div class="phone">
+          <div class="viewport">
+            <div class="statusbar">
+              <span class="mono">9:41</span>
+              <span class="icons">
+                <svg width="15" height="11" viewBox="0 0 16 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="4" y="5" width="3" height="7" rx="1"/><rect x="8" y="2" width="3" height="10" rx="1"/><rect x="12" y="0" width="3" height="12" rx="1"/></svg>
+                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="2" width="13" height="8" rx="2.2"/><rect x="2.8" y="3.8" width="8" height="4.4" rx="1" fill="currentColor" stroke="none"/><path d="M16 5v2"/></svg>
+              </span>
+            </div>
+            <div class="screen" id="screen"></div>
+            <nav class="tabbar" id="tabbar"></nav>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">
+        <div class="noteblock" id="notepanel"></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-taller"></section>
+  <section class="view" id="view-modelo"></section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <b>MecaniGo — Avance de Proyecto Final 1</b>
+        <ul>
+          <li>Curso: Gestión de la Innovación</li>
+          <li>Docente: Garay Julca, Katty Marisol</li>
+          <li>Ingeniería Industrial · 2026 · Perú</li>
+        </ul>
+      </div>
+      <div>
+        <b>Equipo emprendedor</b>
+        <ul>
+          <li>Blas Huaricallo, Junior Walter — Líder del proyecto</li>
+          <li>Curo Moscoso, Edwin Alessandro — Investigación de mercado</li>
+          <li>Guerrero Ramirez, Maria Guadalupe — Operaciones y experiencia del cliente</li>
+          <li>Rojas Lopez, Kiara Alexandra — Tecnología e innovación</li>
+          <li>Vergaray Huatay, Jesús Enrique — Finanzas y marketing</li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">Prototipo navegable de alta fidelidad con datos simulados, construido para sustentar la propuesta de valor y el modelo de negocio del proyecto. Los talleres, reseñas, precios y ubicaciones son ficticios y sirven únicamente como demostración funcional. El tratamiento de datos personales de una implementación real se regiría por la Ley N.° 29733 y su reglamento (D.S. N.° 016-2024-JUS).</p>
+  </div>
+</footer>
+
+<script>
+/* ============ THEME ============ */
+(function(){
+  var root=document.documentElement;
+  try{var s=localStorage.getItem('mg-theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  document.getElementById('themetog').addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var isDark = cur ? cur==='dark' : matchMedia('(prefers-color-scheme:dark)').matches;
+    var next=isDark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('mg-theme',next)}catch(e){}
+  });
+})();
+
+/* ============ DATOS SIMULADOS ============ */
+var TALLERES=[
+ {id:'rios',ini:'RM',nombre:'Ríos Motors',dist:'San Miguel',esp:['Mecánica general','Frenos','Mantenimiento'],cat:['mantenimiento','frenos','motor'],r:4.8,n:212,km:1.2,estado:'abierto',precio:'S/ 90 – 380',resp:'12 min',
+  dir:'Av. La Marina 2418, San Miguel',hor:'Lun–Sáb 8:00 – 19:00',x:112,y:96,
+  svcs:[['Cambio de aceite y filtro','Incluye revisión de 12 puntos','S/ 145'],['Mantenimiento preventivo 10 000 km','Aceite, filtros, bujías, escaneo','S/ 320'],['Cambio de pastillas de freno','Delanteras, mano de obra incluida','S/ 180'],['Diagnóstico por escáner','Lectura y borrado de códigos','S/ 60']],
+  revs:[['Marco A.',5,'Me atendieron el mismo día que reservé por la app. El técnico explicó todo lo que iba a cambiar antes de empezar.'],['Lucía P.',5,'Buen precio y me entregaron el auto a la hora acordada. Ya es la tercera vez que vuelvo.'],['Diego R.',4,'Trabajo correcto en frenos. Solo tuve que esperar unos minutos extra en recepción.']]},
+ {id:'pardo',ini:'AP',nombre:'AutoService Pardo',dist:'Miraflores',esp:['Electricidad automotriz','Escáner','Aire acondicionado'],cat:['electricidad','motor'],r:4.6,n:148,km:2.4,estado:'abierto',precio:'S/ 120 – 520',resp:'25 min',
+  dir:'Av. José Pardo 1180, Miraflores',hor:'Lun–Vie 8:30 – 18:30',x:238,y:150,
+  svcs:[['Diagnóstico eléctrico completo','Alternador, batería y arranque','S/ 120'],['Cambio de batería','Instalación y prueba de carga','S/ 380'],['Recarga de aire acondicionado','Gas R134a y detección de fugas','S/ 220'],['Escaneo computarizado','Todos los módulos','S/ 90']],
+  revs:[['Ana C.',5,'Encontraron una falla eléctrica que otro taller no pudo detectar en dos visitas.'],['Jorge M.',4,'Buen servicio, aunque la reserva más cercana era para dos días después.']]},
+ {id:'rapido',ini:'ER',nombre:'Llantera El Rápido',dist:'Pueblo Libre',esp:['Neumáticos','Alineamiento','Balanceo'],cat:['neumaticos'],r:4.4,n:96,km:0.8,estado:'abierto',precio:'S/ 40 – 260',resp:'8 min',
+  dir:'Av. Bolívar 965, Pueblo Libre',hor:'Lun–Dom 7:00 – 21:00',x:70,y:172,
+  svcs:[['Alineamiento y balanceo','Cuatro ruedas, equipo computarizado','S/ 120'],['Parche de neumático','Reparación en frío','S/ 40'],['Rotación de neumáticos','Incluye calibración','S/ 55'],['Cambio de neumático','Precio por unidad, sin llanta','S/ 35']],
+  revs:[['Pedro S.',5,'Abierto domingo por la mañana, que fue justo lo que necesitaba.'],['Rosa T.',4,'Rápidos como su nombre. El local es pequeño pero atienden bien.']]},
+ {id:'huascaran',ini:'MH',nombre:'Mecánica Huascarán',dist:'Jesús María',esp:['Suspensión','Dirección','Frenos'],cat:['frenos','mantenimiento'],r:4.7,n:173,km:1.9,estado:'ocupado',precio:'S/ 110 – 690',resp:'40 min',
+  dir:'Jr. Huascarán 448, Jesús María',hor:'Lun–Sáb 8:00 – 18:00',x:176,y:210,
+  svcs:[['Cambio de amortiguadores','Par delantero, mano de obra','S/ 290'],['Revisión de suspensión','Diagnóstico con elevador','S/ 110'],['Cambio de rótulas y terminales','Incluye alineamiento','S/ 340']],
+  revs:[['Carlos V.',5,'Trabajo prolijo en suspensión. Me mostraron las piezas antiguas al terminar.'],['Elena G.',5,'Cotización clara desde la app, sin cobros sorpresa al final.']]},
+ {id:'diesel',ini:'FD',nombre:'Full Diesel Perú',dist:'Callao',esp:['Motor diésel','Inyección','Turbo'],cat:['motor'],r:4.5,n:64,km:6.3,estado:'abierto',precio:'S/ 180 – 1 400',resp:'35 min',
+  dir:'Av. Argentina 3120, Callao',hor:'Lun–Sáb 8:00 – 17:30',x:36,y:64,
+  svcs:[['Calibración de inyectores','Banco de pruebas','S/ 480'],['Diagnóstico de motor diésel','Compresión y presión de riel','S/ 180'],['Mantenimiento de turbo','Limpieza e inspección','S/ 620']],
+  revs:[['Transportes Nor-Sur',5,'Trabajamos con ellos toda nuestra flota de camionetas.'],['Hugo L.',4,'Especialistas de verdad en diésel, aunque quedan lejos del centro.']]},
+ {id:'torres',ini:'PT',nombre:'Planchado y Pintura Torres',dist:'Lince',esp:['Planchado','Pintura','Pulido'],cat:['planchado'],r:4.3,n:81,km:3.1,estado:'cerrado',precio:'S/ 250 – 2 200',resp:'1 h 10 min',
+  dir:'Av. Arenales 1890, Lince',hor:'Lun–Vie 9:00 – 18:00',x:290,y:76,
+  svcs:[['Planchado y pintura de puerta','Incluye difuminado','S/ 450'],['Pulido y abrillantado','Carrocería completa','S/ 250'],['Reparación de parachoques','Plástico, pintura incluida','S/ 380']],
+  revs:[['Sofía N.',4,'El acabado quedó muy bien. Demoró dos días más de lo estimado.'],['Iván D.',5,'Buen color, no se nota la diferencia con la pintura original.']]},
+ {id:'aramburu',ini:'SA',nombre:'Servicio Rápido Aramburú',dist:'Surquillo',esp:['Cambio de aceite','Mantenimiento preventivo'],cat:['mantenimiento'],r:4.6,n:134,km:4.0,estado:'abierto',precio:'S/ 80 – 300',resp:'15 min',
+  dir:'Av. Aramburú 785, Surquillo',hor:'Lun–Dom 8:00 – 20:00',x:314,y:196,
+  svcs:[['Cambio de aceite express','Atención en 30 minutos','S/ 130'],['Cambio de filtro de aire y cabina','Ambos filtros','S/ 95'],['Revisión pre-viaje','Niveles, frenos, luces y presión','S/ 80']],
+  revs:[['Nadia F.',5,'Entré sin cita y salí en media hora con el aceite cambiado.'],['Raúl E.',4,'Precio justo para un mantenimiento básico.']]}
+];
+var byId=function(id){for(var i=0;i<TALLERES.length;i++){if(TALLERES[i].id===id)return TALLERES[i]}return null};
+
+var FILTROS=[['todos','Todos'],['mantenimiento','Mantenimiento'],['frenos','Frenos'],['electricidad','Electricidad'],['neumaticos','Neumáticos'],['motor','Motor'],['planchado','Planchado']];
+
+var HISTORIAL=[
+ ['12 JUL 2026','Mantenimiento preventivo 70 000 km','Ríos Motors · 70 120 km','S/ 320'],
+ ['28 ABR 2026','Cambio de pastillas de freno','Mecánica Huascarán · 66 480 km','S/ 180'],
+ ['05 FEB 2026','Alineamiento y balanceo','Llantera El Rápido · 62 900 km','S/ 120'],
+ ['19 NOV 2025','Cambio de batería','AutoService Pardo · 58 310 km','S/ 380'],
+ ['30 AGO 2025','Cambio de aceite y filtro','Servicio Rápido Aramburú · 54 700 km','S/ 145']
+];
+
+var state={
+  view:'conductor', screen:'inicio', filter:'todos', query:'',
+  sel:null, cmp:[], showCmp:false,
+  bk:{svc:null,date:2,time:null}, last:null,
+  sos:'idle', sosTipo:null,
+  reqs:[
+    {id:1,when:'09:12',cli:'Marco Antonio C.',veh:'Toyota Corolla 2021 · BXQ-114',svc:'Cambio de aceite y filtro',via:'Reserva',estado:'pend'},
+    {id:2,when:'08:47',cli:'Lucía P.',veh:'Kia Rio 2018 · D4S-902',svc:'Diagnóstico por escáner',via:'Cotización',estado:'pend'},
+    {id:3,when:'08:05',cli:'Renzo M.',veh:'Hyundai Tucson 2020 · AKT-337',svc:'Cambio de pastillas de freno',via:'Reserva',estado:'acc'}
+  ]
+};
+
+/* ============ ICONOS ============ */
+var I={
+ home:'<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+ search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+ sos:'<path d="M10.3 3.5 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.5a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/>',
+ hist:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+ user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+ pin:'<path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+ cal:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/>',
+ wrench:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
+ chev:'<path d="m9 18 6-6-6-6"/>',
+ back:'<path d="m15 18-6-6 6-6"/>',
+ check:'<path d="M20 6 9 17l-5-5"/>',
+ alert:'<circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/>',
+ shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+ car:'<path d="M5 17h14M4 17V11l2-5h12l2 5v6"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/>',
+ star:'<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
+ bell:'<path d="M18 9a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/>',
+ lock:'<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>'
+};
+function ic(n,s){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="'+(s||2)+'" stroke-linecap="round" stroke-linejoin="round">'+I[n]+'</svg>'}
+function stars(r){var o='';for(var i=1;i<=5;i++){o+='<svg width="11" height="11" viewBox="0 0 24 24" fill="'+(i<=Math.round(r)?'currentColor':'none')+'" stroke="currentColor" stroke-width="2">'+I.star+'</svg>'}return '<span class="star" style="display:inline-flex;gap:1px">'+o+'</span>'}
+function estadoChip(e){
+  if(e==='abierto')return '<span class="chip open">Abierto</span>';
+  if(e==='ocupado')return '<span class="chip busy">Alta demanda</span>';
+  return '<span class="chip closed">Cerrado</span>';
+}
+
+/* ============ NOTAS LATERALES ============ */
+var NOTAS={
+ inicio:{t:'Pantalla de inicio',l:'El conductor abre la app y ve su vehículo, sus accesos directos y los talleres más cercanos sin escribir nada. Esto ataca el primer problema del informe: no saber a dónde ir.',p:[['Geolocalización','ubica talleres cercanos automáticamente'],['Historial vehicular','el vehículo y su kilometraje son el eje de la app'],['Asistencia','el botón SOS está a un toque desde cualquier pantalla']]},
+ buscar:{t:'Búsqueda y comparación',l:'El usuario filtra por especialidad y compara hasta tres talleres por distancia, calificación, precio y tiempo de respuesta. Es la función que separa a MecaniGo de un simple directorio.',p:[['Búsqueda por especialidad','resuelve el desconocimiento del rubro del taller'],['Comparación','da información suficiente para decidir'],['Calificaciones','reduce la desconfianza hacia talleres desconocidos']]},
+ detalle:{t:'Ficha del taller',l:'Servicios con precios referenciales, horarios, especialidades y reseñas verificadas. La transparencia es la respuesta al alto poder de negociación del cliente identificado en el microentorno.',p:[['Información del taller','servicios, horario y ubicación en un solo lugar'],['Cotización','precios referenciales antes de comprometerse'],['Reputación digital','beneficio directo para el taller afiliado']]},
+ reservar:{t:'Reserva del servicio',l:'Servicio, fecha y hora en tres toques. Los horarios ocupados se muestran bloqueados porque provienen de la agenda real del taller.',p:[['Reserva de servicios','programa la atención sin llamadas telefónicas'],['Gestión de solicitudes','la reserva entra directo al panel del taller']]},
+ confirmado:{t:'Confirmación',l:'La reserva genera un código y aparece de inmediato en el panel del taller. Cambia a la pestaña «Taller afiliado» para verla llegar: así se demuestra que la plataforma conecta los dos segmentos de clientes.',p:[['Doble segmento','una sola acción crea valor para conductor y taller'],['Comisión por servicio','aquí se origina la principal fuente de ingreso']]},
+ asistencia:{t:'Asistencia vehicular',l:'El caso más crítico del informe: una emergencia en vía. El usuario elige el tipo de falla y la plataforma asigna la unidad más cercana con tiempo estimado y seguimiento.',p:[['Solicitud de asistencia','atiende la urgencia, no solo el mantenimiento'],['Alianzas','grúas y empresas de asistencia como socios clave']]},
+ historial:{t:'Historial de mantenimiento',l:'Registro por kilometraje y alertas de mantenimiento preventivo. Es la función que conecta con el factor ecológico del PESTEL y genera recurrencia de uso.',p:[['Historial vehicular','trazabilidad completa del vehículo'],['Alertas preventivas','recordatorios por tiempo o kilometraje'],['Recurrencia','un motivo para volver a abrir la app']]},
+ perfil:{t:'Perfil y datos',l:'Vehículos registrados, métodos de pago y control del tratamiento de datos personales, en línea con la Ley N.° 29733 señalada en el factor legal del PESTEL.',p:[['Protección de datos','consentimiento y control explícitos'],['Multivehículo','un mismo usuario puede administrar varios autos']]}
+};
+
+/* ============ RENDER: CONDUCTOR ============ */
+function mapSVG(){
+  var roads='';
+  var vs=[26,70,124,178,232,286,340,378], hs=[24,62,104,146,188,230,262];
+  for(var i=0;i<vs.length;i++) roads+='<line x1="'+vs[i]+'" y1="0" x2="'+vs[i]+'" y2="262" />';
+  for(var j=0;j<hs.length;j++) roads+='<line x1="0" y1="'+hs[j]+'" x2="392" y2="'+hs[j]+'" />';
+  var pins='';
+  for(var k=0;k<TALLERES.length;k++){
+    var t=TALLERES[k];
+    var col=t.estado==='cerrado'?'var(--ink-3)':(t.estado==='ocupado'?'var(--warn)':'var(--accent)');
+    pins+='<g class="pin" data-act="open" data-id="'+t.id+'" tabindex="0" role="button" aria-label="'+t.nombre+'">'
+      +'<circle class="hit" cx="'+t.x+'" cy="'+t.y+'" r="17"/>'
+      +'<path d="M'+t.x+' '+(t.y+11)+' l-5 -8 h10 z" fill="'+col+'"/>'
+      +'<circle class="head" cx="'+t.x+'" cy="'+(t.y-4)+'" r="8" fill="'+col+'"/>'
+      +'<text x="'+t.x+'" y="'+(t.y-1)+'" text-anchor="middle" font-size="7.5" font-family="Archivo,sans-serif" font-weight="700" fill="var(--surface)">'+t.ini+'</text></g>';
+  }
+  return '<svg viewBox="0 0 392 262" role="img" aria-label="Mapa de talleres cercanos">'
+   +'<rect width="392" height="262" fill="var(--surface-2)"/>'
+   +'<g stroke="var(--surface)" stroke-width="9" stroke-linecap="square">'+roads+'</g>'
+   +'<g stroke="var(--line)" stroke-width="1" stroke-dasharray="3 5" opacity=".8">'+roads+'</g>'
+   +'<path d="M0 122 L392 138" stroke="var(--surface)" stroke-width="15"/>'
+   +'<path d="M0 122 L392 138" stroke="var(--line-2)" stroke-width="1" stroke-dasharray="8 7"/>'
+   +'<circle cx="150" cy="132" r="22" fill="var(--steel)" opacity=".13"/>'
+   +'<circle cx="150" cy="132" r="7" fill="var(--steel)" stroke="var(--surface)" stroke-width="2.5"/>'
+   +pins+'</svg>';
+}
+
+function cerca(){
+  var a=TALLERES.slice().sort(function(x,y){return x.km-y.km});
+  return a.slice(0,3);
+}
+function filtrados(){
+  var q=state.query.toLowerCase().trim();
+  return TALLERES.filter(function(t){
+    var okF = state.filter==='todos' || t.cat.indexOf(state.filter)>=0;
+    var okQ = !q || (t.nombre+' '+t.dist+' '+t.esp.join(' ')).toLowerCase().indexOf(q)>=0;
+    return okF&&okQ;
+  }).sort(function(x,y){return x.km-y.km});
+}
+function tItem(t,withCmp){
+  return '<button class="titem" data-act="open" data-id="'+t.id+'">'
+   +'<span class="tlogo">'+t.ini+'</span>'
+   +'<span class="tbody">'
+     +'<span class="tname"><span class="nm">'+t.nombre+'</span>'+estadoChip(t.estado)+'</span>'
+     +'<span class="tsub">'+t.esp.join(' · ')+'</span>'
+     +'<span class="trow"><span class="star">★ '+t.r.toFixed(1)+'</span><span style="color:var(--ink-3)">('+t.n+')</span>'
+       +'<span style="color:var(--ink-3)">·</span><span class="dist">'+t.km.toFixed(1)+' km</span><span style="color:var(--ink-3)">·</span><span class="mono">desde '+t.precio.split('–')[0].trim()+'</span></span>'
+   +'</span>'
+   +(withCmp?'<span class="cmpcheck" data-act="cmp" data-id="'+t.id+'" data-on="'+(state.cmp.indexOf(t.id)>=0?1:0)+'" role="checkbox" aria-checked="'+(state.cmp.indexOf(t.id)>=0)+'" aria-label="Comparar '+t.nombre+'">'+ic('check',3)+'</span>':'')
+   +'</button>';
+}
+
+function scInicio(){
+  var c=cerca().map(function(t){return tItem(t,false)}).join('');
+  return '<div class="hello"><div class="row"><span class="avatar">JV</span>'
+    +'<div style="flex:1"><div style="font-family:Archivo,sans-serif;font-weight:600;font-size:14.5px">Hola, Jesús</div>'
+    +'<div class="loc">'+ic('pin')+'<span>Av. Bolívar, Pueblo Libre</span></div></div>'
+    +'<button class="back" aria-label="Notificaciones">'+ic('bell')+'</button></div></div>'
+  +'<div class="vcard"><div class="top"><div><div class="name">Toyota Yaris 2019</div>'
+    +'<div style="font-size:11px;color:rgba(243,245,247,.6)">Sedán · Gasolina · 1.5</div></div><span class="plate">AFK-482</span></div>'
+    +'<div class="meta"><div>Kilometraje<strong>78 450 km</strong></div><div>Próx. servicio<strong>80 000 km</strong></div><div>Último taller<strong>Ríos Motors</strong></div></div></div>'
+  +'<div class="quick">'
+    +'<button data-act="go" data-s="buscar">'+ic('search')+'Buscar taller</button>'
+    +'<button class="sos" data-act="go" data-s="asistencia">'+ic('sos')+'Asistencia</button>'
+    +'<button data-act="go" data-s="buscar">'+ic('cal')+'Reservar</button>'
+    +'<button data-act="go" data-s="historial">'+ic('hist')+'Historial</button>'
+  +'</div>'
+  +'<div class="sectitle"><h3>Talleres cerca de ti</h3><button data-act="go" data-s="buscar">Ver todos</button></div>'
+  +'<div class="mapbox">'+mapSVG()
+    +'<div class="maplegend"><span><i style="background:var(--accent)"></i>Abierto</span><span><i style="background:var(--warn)"></i>Alta demanda</span><span><i style="background:var(--ink-3)"></i>Cerrado</span></div></div>'
+  +'<div class="sectitle"><h3>Los más próximos</h3><span class="eyebrow">3 de '+TALLERES.length+'</span></div>'
+  +'<div class="tlist">'+c+'</div>';
+}
+
+function scBuscar(){
+  var list=filtrados();
+  var chips=FILTROS.map(function(f){return '<button data-act="filter" data-f="'+f[0]+'" aria-pressed="'+(state.filter===f[0])+'">'+f[1]+'</button>'}).join('');
+  var bar = state.cmp.length ? '<div class="cmpbar"><span>'+state.cmp.length+' de 3 seleccionados</span>'
+      +'<span style="display:flex;gap:12px">'+(state.cmp.length>1?'<button data-act="showcmp">Comparar</button>':'')+'<button data-act="clearcmp">Limpiar</button></span></div>' : '';
+  var body = list.length ? list.map(function(t){return tItem(t,true)}).join('')
+    : '<div class="note" style="text-align:center">No hay talleres que coincidan con esa búsqueda. Prueba con otra especialidad o borra el filtro.</div>';
+  return '<div class="searchbar"><div class="sfield">'+ic('search')
+    +'<input id="q" placeholder="Buscar taller, servicio o distrito" value="'+state.query.replace(/"/g,'&quot;')+'" autocomplete="off"></div></div>'
+  +'<div class="chips">'+chips+'</div>'+bar
+  +'<div class="sectitle"><h3>'+list.length+' resultado'+(list.length===1?'':'s')+'</h3><span class="eyebrow">Por cercanía</span></div>'
+  +'<div class="tlist">'+body+'</div>';
+}
+
+function scComparar(){
+  var sel=state.cmp.map(byId);
+  var minKm=Math.min.apply(null,sel.map(function(t){return t.km}));
+  var maxR=Math.max.apply(null,sel.map(function(t){return t.r}));
+  function row(lbl,fn){return '<tr><th>'+lbl+'</th>'+sel.map(function(t){return '<td>'+fn(t)+'</td>'}).join('')+'</tr>'}
+  return '<div class="navbar"><button class="back" data-act="go" data-s="buscar">'+ic('back')+'</button><h2>Comparar talleres</h2></div>'
+  +'<div class="pad"><div style="overflow-x:auto"><table class="cmptable"><thead><tr><th></th>'
+    +sel.map(function(t){return '<th>'+t.nombre+'<br><span style="font-weight:400;color:var(--ink-3)">'+t.dist+'</span></th>'}).join('')+'</tr></thead><tbody>'
+    +row('Distancia',function(t){return '<span class="mono'+(t.km===minKm?' best':'')+'">'+t.km.toFixed(1)+' km</span>'})
+    +row('Puntaje',function(t){return '<span class="'+(t.r===maxR?'best':'')+'">'+t.r.toFixed(1)+' ★</span><br><span style="color:var(--ink-3)">'+t.n+' reseñas</span>'})
+    +row('Precio',function(t){return '<span class="mono">'+t.precio+'</span>'})
+    +row('Respuesta',function(t){return '<span class="mono">'+t.resp+'</span>'})
+    +row('Estado',function(t){return estadoChip(t.estado)})
+    +row('Rubro',function(t){return t.esp.join('<br>')})
+    +'</tbody></table></div>'
+  +'<div class="note">La comparación usa los mismos criterios que el informe identifica como decisivos para el conductor: distancia, disponibilidad, calificación y precio.</div>'
+  +'<div style="display:flex;gap:8px;margin-top:14px">'+sel.map(function(t){return '<button class="btn btn-ghost" data-act="open" data-id="'+t.id+'" style="font-size:12px;padding:10px 6px">'+t.nombre+'</button>'}).join('')+'</div></div>';
+}
+
+function scDetalle(){
+  var t=byId(state.sel);
+  var svcs=t.svcs.map(function(s){return '<div class="svcrow"><div><div class="n">'+s[0]+'</div><div class="d">'+s[1]+'</div></div><div class="p">'+s[2]+'</div></div>'}).join('');
+  var revs=t.revs.map(function(r){return '<div class="review"><div class="who"><span>'+r[0]+'</span><span>'+r[1]+'.0 ★</span></div><p>'+r[2]+'</p></div>'}).join('');
+  return '<div class="navbar"><button class="back" data-act="go" data-s="buscar">'+ic('back')+'</button><h2>'+t.nombre+'</h2></div>'
+  +'<div class="dhead"><div class="r1"><span class="tlogo">'+t.ini+'</span><div style="flex:1;min-width:0">'
+    +'<div style="font-family:Archivo,sans-serif;font-weight:700;font-size:16px">'+t.nombre+'</div>'
+    +'<div style="font-size:11.5px;color:var(--ink-3)">'+t.dir+'</div>'
+    +'<div style="margin-top:6px">'+estadoChip(t.estado)+' <span class="mono" style="font-size:11px;color:var(--ink-2)">'+t.km.toFixed(1)+' km · responde en '+t.resp+'</span></div>'
+  +'</div></div>'
+  +'<div class="rating"><span class="big">'+t.r.toFixed(1)+'</span>'+stars(t.r)+'<span style="color:var(--ink-3)">'+t.n+' reseñas verificadas</span></div>'
+  +'<div class="tagrow">'+t.esp.map(function(e){return '<span class="tag">'+e+'</span>'}).join('')+'<span class="tag">'+t.hor+'</span></div></div>'
+  +'<div class="pad"><h3 style="font-size:13.5px;margin-bottom:4px">Servicios y precios referenciales</h3>'+svcs
+  +'<h3 style="font-size:13.5px;margin:20px 0 2px">Reseñas de usuarios</h3>'+revs
+  +'<div class="note">'+ic('shield')+' Las reseñas provienen únicamente de servicios efectivamente realizados y pagados a través de la plataforma.</div></div>'
+  +'<div class="actionbar"><button class="btn btn-ghost" data-act="go" data-s="buscar">Volver</button>'
+    +'<button class="btn btn-primary" data-act="reservar">Reservar servicio</button></div>';
+}
+
+var DIAS=[['LUN',15],['MAR',16],['MIÉ',17],['JUE',18],['VIE',19],['SÁB',20]];
+var HORAS=['08:00','09:00','10:00','11:00','14:00','15:00','16:00','17:00'];
+var OCUP=['09:00','15:00'];
+
+function scReservar(){
+  var t=byId(state.sel);
+  var svcs=t.svcs.map(function(s,i){return '<button class="opt" data-act="svc" data-i="'+i+'" aria-pressed="'+(state.bk.svc===i)+'"><span class="radio"></span><span><span style="font-weight:600">'+s[0]+'</span><br><span style="font-size:10.5px;color:var(--ink-3)">'+s[1]+'</span></span><span class="p">'+s[2]+'</span></button>'}).join('');
+  var dates=DIAS.map(function(d,i){return '<button class="dchip" data-act="date" data-i="'+i+'" aria-pressed="'+(state.bk.date===i)+'"><span class="dw">'+d[0]+'</span><span class="dd">'+d[1]+'</span></button>'}).join('');
+  var slots=HORAS.map(function(h){var busy=OCUP.indexOf(h)>=0;return '<button class="slot" data-act="time" data-h="'+h+'" aria-pressed="'+(state.bk.time===h)+'"'+(busy?' disabled':'')+'>'+h+'</button>'}).join('');
+  var ready=state.bk.svc!==null&&state.bk.time!==null;
+  return '<div class="navbar"><button class="back" data-act="open" data-id="'+t.id+'">'+ic('back')+'</button><h2>Reservar en '+t.nombre+'</h2></div>'
+  +'<div class="pad"><div class="fieldlabel">1 · ¿Qué servicio necesitas?</div><div class="optlist">'+svcs+'</div>'
+  +'<div class="fieldlabel">2 · Elige el día — septiembre 2026</div><div class="dates">'+dates+'</div>'
+  +'<div class="fieldlabel">3 · Elige la hora</div><div class="slots">'+slots+'</div>'
+  +'<div class="note">Los horarios tachados ya están ocupados en la agenda del taller. La disponibilidad se sincroniza con el panel del taller afiliado.</div></div>'
+  +'<div class="actionbar"><button class="btn btn-primary" data-act="confirmar"'+(ready?'':' disabled')+'>'+(ready?'Confirmar reserva':'Completa los 3 pasos')+'</button></div>';
+}
+
+function scConfirmado(){
+  var b=state.last;
+  return '<div class="success"><div class="tick">'+ic('check',3)+'</div>'
+  +'<h2 style="font-size:20px">Reserva confirmada</h2>'
+  +'<p style="font-size:12.5px;color:var(--ink-2);margin:7px 0 0">'+b.taller+' recibió tu solicitud y te confirmará por notificación.</p>'
+  +'<div class="code">'+b.code+'</div><div class="eyebrow">Código de reserva</div>'
+  +'<div class="summary">'
+    +'<div class="srow"><span>Servicio</span><span>'+b.svc+'</span></div>'
+    +'<div class="srow"><span>Taller</span><span>'+b.taller+'</span></div>'
+    +'<div class="srow"><span>Fecha y hora</span><span>'+b.fecha+' · '+b.hora+'</span></div>'
+    +'<div class="srow"><span>Vehículo</span><span>Toyota Yaris 2019 · AFK-482</span></div>'
+    +'<div class="srow"><span>Precio referencial</span><span class="mono">'+b.precio+'</span></div>'
+    +'<div class="srow"><span>Comisión MecaniGo (8 %)</span><span class="mono">'+b.com+'</span></div>'
+  +'</div>'
+  +'<div class="note" style="text-align:left;margin-top:16px">Esta reserva ya aparece en la pestaña <b>Taller afiliado</b>, arriba. Cámbiate a ella para ver cómo la recibe el taller.</div>'
+  +'</div>'
+  +'<div class="actionbar"><button class="btn btn-ghost" data-act="go" data-s="historial">Ver historial</button><button class="btn btn-primary" data-act="go" data-s="inicio">Volver al inicio</button></div>';
+}
+
+var TIPOS=[['bateria','Batería descargada'],['llanta','Llanta desinflada'],['motor','El motor no arranca'],['choque','Choque o siniestro'],['gasolina','Me quedé sin combustible'],['otro','Otra emergencia']];
+function scAsistencia(){
+  if(state.sos==='idle'){
+    return '<div class="navbar"><h2>Asistencia vehicular</h2></div><div class="sosscreen">'
+    +'<p style="font-size:12.5px;color:var(--ink-2);margin:4px 0 0">Selecciona qué ocurre y solicita ayuda. Enviaremos tu ubicación exacta a la unidad más cercana.</p>'
+    +'<div class="chips" style="justify-content:center;flex-wrap:wrap;padding:14px 0 0;overflow:visible">'
+      +TIPOS.map(function(t){return '<button data-act="tipo" data-t="'+t[0]+'" aria-pressed="'+(state.sosTipo===t[0])+'">'+t[1]+'</button>'}).join('')+'</div>'
+    +'<button class="sosbtn" data-act="sos"'+(state.sosTipo?'':' disabled style="opacity:.4;animation:none"')+'>SOS<small>SOLICITAR AHORA</small></button>'
+    +'<div class="note" style="text-align:left">'+ic('shield')+' Tu ubicación se comparte solo mientras dure la asistencia y se deja de compartir al cerrar el servicio.</div></div>';
+  }
+  if(state.sos==='buscando'){
+    return '<div class="navbar"><h2>Buscando ayuda</h2></div><div class="sosscreen" style="padding-top:60px">'
+    +'<div class="spin"></div><h2 style="font-size:18px">Buscando la unidad más cercana</h2>'
+    +'<p style="font-size:12.5px;color:var(--ink-2)">Estamos contactando a los aliados de asistencia disponibles en tu zona.</p></div>';
+  }
+  return '<div class="navbar"><h2>Asistencia en camino</h2></div><div class="sosscreen" style="text-align:left">'
+  +'<div style="text-align:center;padding:8px 0 14px"><div class="eyebrow">Llega en</div><div class="eta">14 min</div></div>'
+  +'<div class="card" style="padding:13px;display:flex;gap:11px;align-items:center">'
+    +'<span class="tlogo" style="background:var(--steel-soft);color:var(--steel)">G7</span>'
+    +'<div style="flex:1"><div style="font-family:Archivo,sans-serif;font-weight:600;font-size:13.5px">Grúas Lima 24/7</div>'
+    +'<div style="font-size:11.5px;color:var(--ink-3)">Unidad G-07 · Placa C2W-118</div>'
+    +'<div style="font-size:11.5px;margin-top:3px">'+stars(4.9)+' <span class="mono">4.9</span> · Operador: Wilmer Q.</div></div></div>'
+  +'<div class="track">'
+    +'<div class="tstep done"><span class="dot"></span><span class="lbl"><strong>Solicitud recibida</strong><em>9:41 · '+(TIPOS.filter(function(t){return t[0]===state.sosTipo})[0]||['','Emergencia'])[1]+'</em></span></div>'
+    +'<div class="tstep done"><span class="dot"></span><span class="lbl"><strong>Unidad asignada</strong><em>9:42 · Grúas Lima 24/7</em></span></div>'
+    +'<div class="tstep now"><span class="dot"></span><span class="lbl"><strong>En camino a tu ubicación</strong><em>Av. Bolívar 965, Pueblo Libre</em></span></div>'
+    +'<div class="tstep"><span class="dot"></span><span class="lbl"><strong>Atención en sitio</strong><em>Pendiente</em></span></div>'
+    +'<div class="tstep"><span class="dot"></span><span class="lbl"><strong>Traslado a taller</strong><em>Si el vehículo no puede circular</em></span></div>'
+  +'</div>'
+  +'<div class="note">Costo referencial del servicio de grúa: <b class="mono">S/ 150</b>. Se confirma antes de iniciar el traslado.</div>'
+  +'</div><div class="actionbar"><button class="btn btn-ghost" data-act="cancelsos">Cancelar solicitud</button><button class="btn btn-primary" data-act="go" data-s="inicio">Inicio</button></div>';
+}
+
+function scHistorial(){
+  var rows=HISTORIAL.map(function(h){return '<div class="hitem"><span class="hdate">'+h[0]+'</span><div><div class="n">'+h[1]+'</div><div class="s">'+h[2]+'</div></div><span class="c">'+h[3]+'</span></div>'}).join('');
+  var pend = state.last ? '<div class="sectitle"><h3>Próxima cita</h3></div><div class="tlist"><div class="titem" style="cursor:default">'
+    +'<span class="tlogo" style="background:var(--ok-soft);color:var(--ok)">'+ic('cal')+'</span><span class="tbody"><span class="tname">'+state.last.svc+'</span>'
+    +'<span class="tsub">'+state.last.taller+' · '+state.last.fecha+' a las '+state.last.hora+'</span>'
+    +'<span class="trow"><span class="mono">'+state.last.code+'</span><span class="chip open">Confirmada</span></span></span></div></div>' : '';
+  return '<div class="navbar"><h2>Historial del vehículo</h2></div>'
+  +'<div class="alert">'+ic('alert')+'<div><strong>Mantenimiento preventivo próximo</strong>Faltan 1 550 km para el servicio de 80 000 km. Programarlo a tiempo alarga la vida del motor y reduce emisiones.</div></div>'
+  +pend
+  +'<div class="sectitle"><h3>Servicios realizados</h3><span class="eyebrow">Total S/ 1 145</span></div>'
+  +'<div class="pad" style="padding-top:0">'+rows
+  +'<div class="note">El historial es propiedad del conductor y se conserva aunque cambie de taller. Al vender el vehículo puede compartirse como comprobante de mantenimiento.</div></div>';
+}
+
+function scPerfil(){
+  return '<div class="navbar"><h2>Mi perfil</h2></div>'
+  +'<div class="pad"><div style="display:flex;gap:12px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line)">'
+    +'<span class="avatar" style="width:52px;height:52px;font-size:17px">JV</span><div><div style="font-family:Archivo,sans-serif;font-weight:700;font-size:16px">Jesús Vergaray</div>'
+    +'<div style="font-size:11.5px;color:var(--ink-3)">Cuenta verificada · Miembro desde 2025</div></div></div>'
+  +'<h3 style="font-size:13px;margin:16px 0 2px">Mis vehículos</h3>'
+  +'<button class="listrow">'+ic('car')+'<div><div style="font-weight:600">Toyota Yaris 2019</div><div style="font-size:11px;color:var(--ink-3)">AFK-482 · 78 450 km</div></div><span class="arw">'+ic('chev')+'</span></button>'
+  +'<button class="listrow">'+ic('car')+'<div><div style="font-weight:600">Nissan Frontier 2015</div><div style="font-size:11px;color:var(--ink-3)">B9T-771 · 142 300 km</div></div><span class="arw">'+ic('chev')+'</span></button>'
+  +'<h3 style="font-size:13px;margin:18px 0 2px">Cuenta</h3>'
+  +'<button class="listrow">'+ic('cal')+'<span>Mis reservas</span><span class="arw">'+ic('chev')+'</span></button>'
+  +'<button class="listrow">'+ic('bell')+'<span>Notificaciones y recordatorios</span><span class="arw">'+ic('chev')+'</span></button>'
+  +'<button class="listrow">'+ic('lock')+'<span>Privacidad y datos personales</span><span class="arw">'+ic('chev')+'</span></button>'
+  +'<button class="listrow">'+ic('wrench')+'<span>¿Tienes un taller? Afíliate</span><span class="arw">'+ic('chev')+'</span></button>'
+  +'<div class="note">MecaniGo trata los datos de ubicación, contacto y vehículo conforme a la Ley N.° 29733 de Protección de Datos Personales y su reglamento (D.S. N.° 016-2024-JUS). El usuario puede revocar su consentimiento y solicitar la eliminación de su información desde esta pantalla.</div></div>';
+}
+
+var SCREENS={inicio:scInicio,buscar:scBuscar,comparar:scComparar,detalle:scDetalle,reservar:scReservar,confirmado:scConfirmado,asistencia:scAsistencia,historial:scHistorial,perfil:scPerfil};
+var TABMAP={inicio:'inicio',buscar:'buscar',comparar:'buscar',detalle:'buscar',reservar:'buscar',confirmado:'inicio',asistencia:'asistencia',historial:'historial',perfil:'perfil'};
+
+function renderTabs(){
+  var tabs=[['inicio','Inicio','home'],['buscar','Buscar','search'],['asistencia','Asistencia','sos'],['historial','Historial','hist'],['perfil','Perfil','user']];
+  document.getElementById('tabbar').innerHTML=tabs.map(function(t){
+    return '<button data-act="go" data-s="'+t[0]+'" aria-current="'+(TABMAP[state.screen]===t[0])+'">'+ic(t[2])+t[1]+'</button>';
+  }).join('');
+}
+function renderNotes(){
+  var k=state.screen==='comparar'?'buscar':state.screen;
+  var n=NOTAS[k]||NOTAS.inicio;
+  document.getElementById('notepanel').innerHTML='<div class="eyebrow">Qué demuestra esta pantalla</div><h3>'+n.t+'</h3>'
+    +'<p class="lead">'+n.l+'</p><hr>'
+    +'<div class="eyebrow" style="margin-bottom:6px">Elementos del proyecto</div>'
+    +n.p.map(function(p){return '<div class="linkrow"><span class="bullet"></span><span><b>'+p[0]+'</b> — '+p[1]+'</span></div>'}).join('')
+    +'<div class="tip">'+ic('alert')+'<span>Prototipo interactivo: toca el mapa, los filtros y los botones. Todo el flujo es navegable.</span></div>';
+}
+function renderConductor(){
+  var el=document.getElementById('screen');
+  var top=el.scrollTop;
+  el.innerHTML=SCREENS[state.screen]();
+  el.scrollTop = (state.screen==='buscar')?top:0;
+  renderTabs(); renderNotes();
+  var q=document.getElementById('q');
+  if(q){q.addEventListener('input',function(){state.query=this.value;var p=this.selectionStart;renderConductor();var n=document.getElementById('q');if(n){n.focus();n.setSelectionRange(p,p)}});}
+}
+
+/* ============ RENDER: TALLER ============ */
+function sparkline(vals,color){
+  var w=104,h=26,max=Math.max.apply(null,vals),min=Math.min.apply(null,vals),rg=(max-min)||1;
+  var pts=vals.map(function(v,i){return [(i/(vals.length-1))*w, h-2-((v-min)/rg)*(h-6)]});
+  var d=pts.map(function(p,i){return (i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)}).join(' ');
+  var area=d+' L'+w+' '+h+' L0 '+h+' Z';
+  var last=pts[pts.length-1];
+  return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" aria-hidden="true">'
+   +'<path d="'+area+'" fill="'+color+'" opacity=".13"/><path d="'+d+'" fill="none" stroke="'+color+'" stroke-width="1.8" stroke-linejoin="round"/>'
+   +'<circle cx="'+last[0].toFixed(1)+'" cy="'+last[1].toFixed(1)+'" r="2.6" fill="'+color+'"/></svg>';
+}
+function renderTaller(){
+  var T = byId(state.panelTaller||'rios') || byId('rios');
+  var pend=state.reqs.filter(function(r){return r.estado==='pend'}).length;
+  var acc=state.reqs.filter(function(r){return r.estado==='acc'}).length;
+  var reqs=state.reqs.map(function(r){
+    var acts = r.estado==='pend'
+      ? '<span class="acts"><button class="mini ok" data-act="acc" data-id="'+r.id+'">Aceptar</button><button class="mini no" data-act="rej" data-id="'+r.id+'">Rechazar</button></span>'
+      : '<span class="acts"><span class="state '+(r.estado==='acc'?'acc':'rej')+'">'+(r.estado==='acc'?'✓ Aceptada':'Rechazada')+'</span></span>';
+    return '<div class="req"><span class="when">'+r.when+'</span><div class="info"><b>'+r.svc+'</b>'
+      +'<p>'+r.cli+' · '+r.veh+'</p>'
+      +'<p style="color:var(--ink-3);font-size:11px">Vía '+r.via+' desde la app'+(r.code?' · <span class="mono">'+r.code+'</span>':'')+'</p></div>'+acts+'</div>';
+  }).join('');
+  var ag=[['08:00','Cambio de aceite y filtro','BXQ-114',1],['09:00','Diagnóstico por escáner','D4S-902',1],['10:00','','',0],['11:00','Cambio de pastillas de freno','AKT-337',1],['14:00','','',0],['15:00','Mantenimiento 10 000 km','JLP-556',1],['16:00','','',0],['17:00','Revisión de frenos','QWE-018',1]];
+  if(state.last){ for(var q=0;q<ag.length;q++){ if(ag[q][0]===state.last.hora && !ag[q][3]){ ag[q]=[state.last.hora,state.last.svc,'AFK-482',2]; break } } }
+  var agenda=ag.map(function(a){return '<div class="aslot'+(a[3]?'':' free')+'"><span class="h">'+a[0]+'</span><span class="bar"'+(a[3]===2?' style="background:var(--ok)"':'')+'></span>'
+      +'<span>'+(a[3]?a[1]:'Disponible')+(a[3]===2?' <span class="chip open" style="margin-left:4px">Nueva</span>':'')+'</span>'+(a[3]?'<span class="veh">'+a[2]+'</span>':'')+'</div>'}).join('');
+  var tot=T.n;
+  var rb=[[5,Math.round(tot*.79)],[4,Math.round(tot*.145)],[3,Math.round(tot*.038)],[2,Math.round(tot*.014)],[1,Math.round(tot*.013)]];
+  var bars=rb.map(function(x){return '<div class="rbar"><span class="t">'+x[0]+'</span><span class="track2"><span class="fill" style="width:'+((x[1]/tot)*100).toFixed(1)+'%"></span></span><span class="n">'+x[1]+'</span></div>'}).join('');
+
+  document.getElementById('view-taller').innerHTML=
+   '<div class="dash">'
+   +'<div class="dashhead"><span class="tlogo">'+T.ini+'</span><div style="flex:1;min-width:180px"><h2 style="font-size:18px">'+T.nombre+'</h2>'
+     +'<div style="font-size:12px;color:var(--ink-3)">'+T.dir+' · Panel del taller afiliado</div></div>'
+     +'<span class="pro">Plan Pro · S/ 149 al mes</span>'
+     +'<span class="chip open" style="font-size:11px;padding:5px 10px">Abierto ahora</span></div>'
+   +'<div class="kpis">'
+     +'<div class="kpi"><div class="lb">Solicitudes hoy</div><div class="k">'+state.reqs.length+'</div><div class="dt up">'+pend+' sin responder</div>'+sparkline([4,6,5,8,7,9,state.reqs.length],'var(--accent)')+'</div>'
+     +'<div class="kpi"><div class="lb">Reservas confirmadas</div><div class="k">'+(5+acc)+'</div><div class="dt up">+18 % vs. semana previa</div>'+sparkline([9,11,10,14,13,16,5+acc+11],'var(--ok)')+'</div>'
+     +'<div class="kpi"><div class="lb">Ingreso estimado semana</div><div class="k" style="font-size:24px">S/ 4 380</div><div class="dt up">+S/ 640</div>'+sparkline([2900,3100,3400,3200,3900,4100,4380],'var(--steel)')+'</div>'
+     +'<div class="kpi"><div class="lb">Calificación</div><div class="k">'+T.r.toFixed(1)+'</div><div class="dt flat">'+T.n+' reseñas · sin cambios</div>'+sparkline([T.r-.2,T.r-.2,T.r-.1,T.r-.1,T.r,T.r,T.r],'var(--warn)')+'</div>'
+   +'</div>'
+   +'<div class="dashgrid">'
+     +'<div class="panel"><header><h3>Solicitudes entrantes</h3>'+(pend?'<span class="badge">'+pend+' pendiente'+(pend>1?'s':'')+'</span>':'<span class="badge" style="background:var(--ok-soft);color:var(--ok)">Al día</span>')+'</header>'
+       +'<div class="body">'+reqs+'</div></div>'
+     +'<div style="display:flex;flex-direction:column;gap:18px">'
+       +'<div class="panel"><header><h3>Agenda de hoy</h3><span class="eyebrow">Jue 17 sep</span></header><div class="body"><div class="agenda">'+agenda+'</div></div></div>'
+       +'<div class="panel"><header><h3>Reputación</h3><span class="eyebrow">Últimos 90 días</span></header><div class="body">'
+         +'<div style="display:flex;align-items:baseline;gap:9px;padding:6px 0 10px"><span style="font-family:Archivo,sans-serif;font-weight:700;font-size:34px;letter-spacing:-.03em">'+T.r.toFixed(1)+'</span>'+stars(T.r)+'<span style="font-size:11.5px;color:var(--ink-3)">'+tot+' reseñas</span></div>'
+         +bars
+         +'<div class="note" style="margin-top:12px">Los talleres con calificación mayor a 4.5 aparecen primero en las búsquedas por defecto. La reputación digital es el principal incentivo de permanencia en la plataforma.</div>'
+       +'</div></div>'
+     +'</div>'
+   +'</div>'
+   +'<div class="panel"><header><h3>Qué gana el taller con MecaniGo</h3></header><div class="body"><div class="revgrid" style="margin-top:12px">'
+     +[['Visibilidad','Aparece ante conductores que buscan su especialidad dentro de un radio determinado, sin invertir en publicidad propia.'],
+       ['Captación','El 62 % de las solicitudes simuladas provienen de clientes nuevos que no conocían el taller.'],
+       ['Gestión','Solicitudes, cotizaciones y agenda en un solo panel, sin coordinar por teléfono o mensajería.'],
+       ['Reputación','Reseñas verificadas de servicios efectivamente pagados, imposibles de falsificar.']]
+       .map(function(c){return '<div class="rev4"><b>'+c[0]+'</b><p>'+c[1]+'</p></div>'}).join('')
+   +'</div></div></div>'
+   +'</div>';
+}
+
+/* ============ RENDER: MODELO ============ */
+function renderModelo(){
+  function blk(cls,area,icon,title,items,hero){
+    return '<div class="blk '+(cls||'')+' a-'+area+'"><h4>'+ic(icon)+title+'</h4>'
+      +(hero?'<div class="q">'+items+'</div>':'<ul>'+items.map(function(i){return '<li>'+i+'</li>'}).join('')+'</ul>')+'</div>';
+  }
+  document.getElementById('view-modelo').innerHTML=
+   '<div class="mhead"><div class="eyebrow">Construcción del modelo de negocio</div>'
+   +'<h2>Lienzo Canvas de MecaniGo</h2>'
+   +'<p>MecaniGo opera como intermediario digital entre la demanda de servicios automotrices y la oferta disponible. El lienzo muestra cómo la plataforma crea, entrega y captura valor para sus dos segmentos de clientes.</p></div>'
+   +'<div class="canvas">'
+   + blk('','sc','user','Segmentos de clientes',['<b>Conductores</b>: propietarios de autos y camionetas que necesitan mantenimiento, reparación o asistencia','<b>Talleres automotrices</b>: talleres formales, técnicos independientes y establecimientos especializados','Mercado inicial: Lima Metropolitana y Callao, con expansión progresiva a nivel nacional'])
+   + blk('','ac','wrench','Actividades clave',['Desarrollo y mantenimiento de la aplicación','Afiliación y verificación de talleres','Gestión de solicitudes, reservas y calificaciones','Marketing digital y captación de usuarios','Protección de los datos de los usuarios'])
+   + blk('','rk','shield','Recursos clave',['Aplicación móvil y plataforma en la nube','Sistema de geolocalización y base de datos','Red de talleres afiliados y base de usuarios','Equipo de desarrollo, soporte y afiliación','Marca MecaniGo'])
+   + blk('hero','pv','star','Propuesta de valor','Encontrar, comparar y solicitar servicios automotrices de forma rápida, sencilla y confiable — y para el taller, un canal digital que aumenta su alcance y le trae clientes nuevos.',true)
+   + blk('','rc','bell','Relación con clientes',['Autoservicio guiado desde la app','Notificaciones de solicitudes y reservas','Sistema de calificaciones y reseñas verificadas','Soporte digital y acompañamiento en la afiliación','Historial de servicios como registro permanente'])
+   + blk('','cn','pin','Canales',['Aplicación móvil (canal principal)','Página web informativa','Redes sociales y publicidad digital','Recomendación entre usuarios','Alianzas con empresas del sector automotor'])
+   + blk('','cs','home','Socios clave',['Talleres automotrices y técnicos independientes','Empresas de grúas y asistencia vehicular','Empresas de repuestos y lubricantes','Aseguradoras','Proveedores de mapas, servidores y pasarelas de pago'])
+   + blk('cost','co','alert','Estructura de costos',['Desarrollo y mantenimiento de la plataforma','Servidores, almacenamiento y servicios de mapas','Personal de tecnología, soporte, marketing y afiliación','Campañas de lanzamiento y captación de talleres','Constitución, asesoría legal y cumplimiento de la Ley N.° 29733'])
+   + blk('rev','in','car','Fuentes de ingreso',['Comisión sobre los servicios gestionados por la plataforma','Planes de suscripción para talleres afiliados','Publicidad de empresas del sector automotor','Posicionamiento destacado en resultados de búsqueda'])
+   +'</div>'
+
+   +'<div class="mhead" style="margin-top:44px"><div class="eyebrow">Cómo captura valor</div><h2 style="font-size:22px">Composición estimada de ingresos</h2>'
+   +'<p style="font-size:13px">Distribución proyectada para el primer año de operación. La diversificación evita depender de una única fuente, tal como plantea el modelo de negocio del proyecto.</p></div>'
+   +'<div class="revgrid">'
+   +[['52 %','Comisión por servicio','Entre 6 % y 10 % del valor de cada servicio gestionado y pagado a través de la app.'],
+     ['24 %','Planes para talleres','Suscripción mensual (Plan Pro, S/ 149) con panel de gestión, estadísticas y prioridad de contacto.'],
+     ['15 %','Publicidad en plataforma','Espacios para empresas de repuestos, lubricantes, seguros y asistencia vehicular.'],
+     ['9 %','Servicios destacados','Posicionamiento preferente del taller en búsquedas por especialidad o zona.']]
+     .map(function(r){return '<div class="rev4"><div class="pct">'+r[0]+'</div><b>'+r[1]+'</b><p>'+r[2]+'</p></div>'}).join('')
+   +'</div>'
+
+   +'<div class="mhead" style="margin-top:44px"><div class="eyebrow">Análisis interno</div><h2 style="font-size:22px">Matriz FODA</h2></div>'
+   +'<div class="foda">'
+   +[['rev','Fortalezas',['F1. Plataforma especializada, no un directorio','F2. Geolocalización como núcleo del servicio','F3. Asistencia vehicular integrada','F4. Modelo escalable a nivel nacional']],
+     ['rev','Oportunidades',['O1. 89,2 % de usuarios de Internet accede por celular','O2. Digitalización pendiente de talleres pequeños','O3. Mercado nacional sin líder consolidado','O4. Alianzas con aseguradoras y repuestos']],
+     ['cost','Debilidades',['D1. Inversión tecnológica inicial','D2. Necesidad de masa crítica de talleres','D3. Dependencia de proveedores tecnológicos','D4. Confianza aún por construir']],
+     ['cost','Amenazas',['A1. Competidores digitales ya posicionados','A2. Desconfianza hacia talleres desconocidos','A3. Problemas de conectividad en algunas zonas','A4. Riesgos de protección de datos']]]
+     .map(function(f){return '<div class="blk '+f[0]+'"><h4>'+f[1]+'</h4><ul>'+f[2].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'}).join('')
+   +'</div>';
+}
+
+/* ============ EVENTOS ============ */
+document.addEventListener('click',function(ev){
+  var pv=ev.target.closest('.personas button');
+  if(pv){
+    state.view=pv.dataset.view;
+    document.querySelectorAll('.personas button').forEach(function(b){b.setAttribute('aria-selected',String(b===pv))});
+    document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});
+    document.getElementById('view-'+state.view).classList.add('on');
+    window.scrollTo({top:0,behavior:'smooth'});
+    return;
+  }
+  var el=ev.target.closest('[data-act]');
+  if(!el) return;
+  var a=el.dataset.act;
+
+  if(a==='go'){ state.screen=el.dataset.s; if(state.screen!=='buscar'){state.showCmp=false} renderConductor(); return; }
+  if(a==='open'){ ev.stopPropagation(); state.sel=el.dataset.id; state.bk={svc:null,date:2,time:null}; state.screen='detalle'; renderConductor(); return; }
+  if(a==='cmp'){
+    ev.stopPropagation();
+    var id=el.dataset.id, i=state.cmp.indexOf(id);
+    if(i>=0) state.cmp.splice(i,1); else { if(state.cmp.length>=3) state.cmp.shift(); state.cmp.push(id); }
+    renderConductor(); return;
+  }
+  if(a==='clearcmp'){ ev.stopPropagation(); state.cmp=[]; renderConductor(); return; }
+  if(a==='showcmp'){ ev.stopPropagation(); state.screen='comparar'; renderConductor(); return; }
+  if(a==='filter'){ state.filter=el.dataset.f; renderConductor(); return; }
+  if(a==='reservar'){ state.screen='reservar'; renderConductor(); return; }
+  if(a==='svc'){ state.bk.svc=+el.dataset.i; renderConductor(); return; }
+  if(a==='date'){ state.bk.date=+el.dataset.i; renderConductor(); return; }
+  if(a==='time'){ state.bk.time=el.dataset.h; renderConductor(); return; }
+  if(a==='confirmar'){
+    var t=byId(state.sel), s=t.svcs[state.bk.svc], d=DIAS[state.bk.date];
+    var precio=s[2], num=parseFloat(precio.replace(/[^0-9.]/g,''))||0;
+    var code='MG-'+(2400+Math.floor(Math.random()*580));
+    state.last={code:code,taller:t.nombre,svc:s[0],fecha:d[0].charAt(0)+d[0].slice(1).toLowerCase()+' '+d[1]+' sep',hora:state.bk.time,precio:precio,com:'S/ '+(num*0.08).toFixed(2)};
+    state.reqs.unshift({id:Date.now(),when:state.bk.time,cli:'Jesús Vergaray',veh:'Toyota Yaris 2019 · AFK-482',svc:s[0],via:'Reserva',estado:'pend',code:code});
+    state.panelTaller=t.id;
+    state.screen='confirmado'; renderConductor(); renderTaller(); return;
+  }
+  if(a==='tipo'){ state.sosTipo=el.dataset.t; renderConductor(); return; }
+  if(a==='sos'){
+    state.sos='buscando'; renderConductor();
+    setTimeout(function(){ state.sos='asignado'; if(state.screen==='asistencia') renderConductor(); },2200);
+    return;
+  }
+  if(a==='cancelsos'){ state.sos='idle'; state.sosTipo=null; renderConductor(); return; }
+  if(a==='acc'||a==='rej'){
+    var rid=+el.dataset.id;
+    state.reqs.forEach(function(r){ if(r.id===rid) r.estado=(a==='acc'?'acc':'rej') });
+    renderTaller(); return;
+  }
+});
+document.addEventListener('keydown',function(ev){
+  if(ev.key!=='Enter'&&ev.key!==' ')return;
+  var p=ev.target.closest&&ev.target.closest('.pin');
+  if(p){ev.preventDefault();p.click()}
+});
+
+renderConductor(); renderTaller(); renderModelo();
+</script>
+
+</body>
+</html>
